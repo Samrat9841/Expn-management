@@ -26,9 +26,57 @@ body{
     
 }
 #container #expn-form{
+    text-align: center;
+}
+#container #expn-form{
     margin-top:15% ;
     background-color:rgba(0, 0, 0, 0.08);
     height: 400px;
-    width: 800px;
+    width: 1000px;
     border-radius: 20px;
+}
+
+#expn-form form input {
+    font-size: 15px;
+    height: 25px;
+    margin-right: 20px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 18%;
+}
+#expn-form form select{
+    font-size: 15px;
+    padding: 7px;
+    height: 45px;
+    margin-right: 20px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 18%;
+}
+
+#expn-form form button{
+    background-color:  #088178;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    width: 10%;
+}
+
+#expn-form .total{
+    font-size: 30px;
+    color: #088178;
+}
+
+#expn-form .total strong{
+    color: #fff;
+}
+
+#expn-form h1{
+    font-size: 40px;
+    color: #222;
 }

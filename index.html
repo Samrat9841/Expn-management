@@ -9,10 +9,13 @@
 <body>
     <section id="container">
         <div id="expn-form" class="section-padding1">
+            <h1>Expense Tracker</h1>
+            <br><br>
             <form action="">
                 <input type="text" placeholder="Expense Name">
                 <input type="number" placeholder="Amount">
-                <select name="" id="" placeholder="Select Category">
+                <select name="" id="" >
+                    <option value="" disabled selected>Select Category</option>
                     <option value="Food">Food</option>
                     <option value="Transport">Transport</option>
                     <option value="Entertainment">Entertainment</option>
@@ -21,6 +24,11 @@
                 <input type="date">
                 <button>Submit</button>
             </form>
+
+            <br><br>
+            <div class="total">
+                <strong>Total:</strong> Rs.<span id="total-amount">0</span>
+            </div>
         </div>
     </section>
 </body>
