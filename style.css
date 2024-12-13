@@ -1,0 +1,13 @@
+/* This is the universal styling */
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+/* This is the body styling */
+
+body{
+    background-image: url(img/background.jpg);
+}
