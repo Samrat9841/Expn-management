@@ -9,6 +9,23 @@
     padding: 40px 40px;
 }
 
+.normal{
+    background-color:  #088178;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    width: 10%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 /* This is the body styling */
 
 body{
@@ -17,18 +34,10 @@ body{
     background-size: cover;
 }
 
-#container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-#container #expn-form{
+
+
+ #expn-form{
     text-align: center;
-}
-#container #expn-form{
     margin-top:10% ;
     background-color:rgba(0, 0, 0, 0.08);
     height: 400px;
@@ -58,14 +67,7 @@ body{
     width: 18%;
 }
 
-#expn-form form button{
-    background-color:  #088178;
-    padding: 7px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: #fff;
-    width: 10%;
-}
+
 
 #expn-form .total{
     font-size: 30px;
@@ -82,6 +84,31 @@ body{
 }
 
 
+/* This is the styling of dolist.html */
+#list-container{
+    text-align: center;
+    margin-top:10% ;
+    background-color:rgba(0, 0, 0, 0.08);
+    height: 400px;
+    width: 1000px;
+    border-radius: 20px;
+}
+
+#list-container input{
+    font-size: 15px;
+    height: 25px;
+    margin-right: 20px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 50%;
+}
+
+#list-container h1{
+    font-size: 40px;
+    color: #222;
+}
 /* This the styling for pagination */
 
 .pagination {
