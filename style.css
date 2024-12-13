@@ -5,6 +5,9 @@
     padding:0px;
 }
 
+.section-padding1{
+    padding: 40px 40px;
+}
 
 /* This is the body styling */
 
@@ -13,6 +16,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.expn-form{
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+#container #expn-form{
+    margin-top:15% ;
+    background-color:rgba(0, 0, 0, 0.08);
+    height: 400px;
+    width: 800px;
+    border-radius: 20px;
 }
