@@ -14,7 +14,7 @@
             <br><br>
 
             
-            <form method="post" action="mysql.php">
+            <form method="post" action="index.php">
                 <input type="text" placeholder="Expense Name" name="expense-name">
                 <input type="number" placeholder="Amount"  name="expense-amount">
                 <select name="expense-category" id="" >
@@ -29,41 +29,34 @@
             </form>
 
             <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "expnDetails";    
-        
-            $conn = new mysqli($servername, $username, $password, $dbname);
-        $sql = "SELECT sn, name,amount ,category, date FROM users";
-        $result = $conn->query($sql);
-        
-        
-        if ($result->num_rows > 0) {
-            echo "<table border='1'>
-                    <tr>
-                        <th>sn</th>
-                        <th>Name</th>
-                        <th>Amount</th>
-                        <th>Category</th>
-                        <th>date</th>
-                    </tr>";
-        
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>
-                        <td>" . $row["sn"]. "</td>
-                        <td>" . $row["name"]. "</td>
-                        <td>" . $row["amount"]. "</td>
-                        <td>" . $row["category"]. "</td>
-                        <td>" . $row["date"]. "</td>
-                      </tr>";
-            }
-            echo "</table>";
-        } else {
-            echo "0 results";
-        }
-            
-                ?>
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "expnDetails";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+	if($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		$sql = "INSERT INTO users (name, amount,category,date)
+		VALUES ('".$_POST["expense-name"]."','".$_POST["expense-amount"]."','".$_POST["expense-category"]."','".$_POST["expense-date"]."')";
+
+		if ($conn->query($sql) === TRUE) {
+			echo "New record created successfully";
+		} 
+		else {
+			echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+	}
+	
+
+	$conn->close();
+	//header("location: log.php");
+?>
             <br><br>
             <div class="total">
                 <strong>Total:</strong> Rs.<span id="total-amount">0</span>
