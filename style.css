@@ -104,7 +104,14 @@ table  th {
     background-color: #f6e8d8;
 }
 
-
+.scroll button{
+    background-color:  #088178;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #f84242;
+    width: 100%;
+}
 /* This is the styling of dolist.html */
 #list-container{
     text-align: center;

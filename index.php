@@ -25,7 +25,7 @@
                     <option value="Others">Others</option>
                 </select>
                 <input type="date" name="expense-date">
-                <button class="normal" id="submit" >Submit</button>
+                <input type="button" value=" Submit" id="submit"class="normal">
             </form>
             <br><br>
 
@@ -69,7 +69,7 @@
                               <td>" . $row["amount"]. "</td>
                               <td>" . $row["category"]. "</td>
                               <td>" . $row["date"]. "</td>
-                              
+                              <td ><button >Delete</button></td>
                             </tr>";
                   }
                   echo "</table>";
