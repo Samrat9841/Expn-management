@@ -15,7 +15,7 @@
 
             
             <form method="post" action="index.php" id="dataForm">
-                <input type="text" placeholder="Expense Name" name="expense-name">
+                <input type="text" placeholder="Expense Name" name="expense-name" id="recordId">
                 <input type="number" placeholder="Amount"  name="expense-amount">
                 <select name="expense-category" id="" >
                     <option value="" disabled selected>Select Category</option>
@@ -25,24 +25,15 @@
                     <option value="Others">Others</option>
                 </select>
                 <input type="date" name="expense-date">
-                <button class="normal" onclick="submitForm()">Submit</button>
+                <button class="normal" id="submit" >Submit</button>
             </form>
+            <br><br>
 
-            <table >
-                            <th>
-                                <tr>
-                                    <th>Expense Name</th>
-                                    <th>Amount</th>
-                                    <th>Category</th>
-                                    <th>Date</th>
-                                    <th>Action</th>
-                                </tr>
-                            </th>
-                            
-                        </table>
+            <div class="scroll">
+           
            
             
-            <!-- <?php
+             <?php
           
                 $servername = "localhost";
                 $username = "your_username";
@@ -57,7 +48,7 @@
                     die("Connection failed: " . $conn->connect_error);
                 }
                 
-                $sql = "SELECT sn, name, amount,category, date FROM users";
+                $sql = "SELECT sn, name, amount,category, date FROM info";
                 $result = $conn->query($sql);
 
 
@@ -78,6 +69,7 @@
                               <td>" . $row["amount"]. "</td>
                               <td>" . $row["category"]. "</td>
                               <td>" . $row["date"]. "</td>
+                              
                             </tr>";
                   }
                   echo "</table>";
@@ -86,13 +78,16 @@
               }
               $conn->close();
               
-              ?> -->
-        
+              ?> 
+        </div><!--This is the ending of div scroll -->
               
+        <p id="response"></p>
             <br><br>
             <div class="total">
                 <strong>Total:</strong> Rs.<span id="total-amount">0</span>
             </div>
+
+             
         </div>
     </section>
 
@@ -107,20 +102,10 @@
     
 
     <script>
-       function submitForm() {
-            var xhr = new XMLHttpRequest();
-            var url = "mysql.php";
-            var formData = new FormData(document.getElementById('dataForm'));
-
-            xhr.open("POST", url, true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('response').innerText = xhr.responseText;
-                }
-            };
-            xhr.send(formData);
-        }
+      
     </script>
+<script src="script.js"></script>
+    
 </body>
 </html>
 

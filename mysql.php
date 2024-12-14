@@ -12,7 +12,7 @@
 	}
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
-		$sql = "INSERT INTO users (name, amount,category,date)
+		$sql = "INSERT INTO info (name, amount,category,date)
 		VALUES ('".$_POST["expense-name"]."','".$_POST["expense-amount"]."','".$_POST["expense-category"]."','".$_POST["expense-date"]."')";
 
 		if ($conn->query($sql) === TRUE) {
