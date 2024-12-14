@@ -13,6 +13,7 @@
             <h1><u>Expense Tracker</u></h1>
             <br><br>
 
+            <!-- This is the copied version -->
             <form method="post" action="mysql.php">
                 <input type="text" placeholder="Expense Name" name="expense-name">
                 <input type="number" placeholder="Amount"  name="expense-amount">
@@ -72,7 +73,7 @@
 
     <div class="pagination" id="pagination"> 
         <a href="index.html" class="active" >Previous</a> 
-        <a href="doList.html" >Next</a> 
+        <a href="doList.html" >Next</a>
         
     </div> 
 </body>
