@@ -33,7 +33,7 @@
             $password = "";
             $dbname = "expnDetails";    
         
-            
+            $conn = new mysqli($servername, $username, $password, $dbname);
         $sql = "SELECT sn, name,amount ,category, date FROM users";
         $result = $conn->query($sql);
         
