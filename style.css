@@ -40,7 +40,7 @@ body{
     text-align: center;
     margin-top:10% ;
     background-color:rgba(0, 0, 0, 0.08);
-    height: 400px;
+    height: auto;
     width: 1000px;
     border-radius: 20px;
 }
@@ -84,6 +84,25 @@ body{
 }
 
 
+/* This is the styling for table of php */
+
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 40px 40px;
+}
+
+.container th,.container  td {
+    padding: 10px;
+    border: 1px solid #4e8a9c;
+    text-align: left;
+}
+
+.container th {
+    background-color: #f6e8d8;
+} 
 /* This is the styling of dolist.html */
 #list-container{
     text-align: center;
