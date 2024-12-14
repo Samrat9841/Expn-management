@@ -57,13 +57,11 @@
                         <td>" . $row["date"]. "</td>
                       </tr>";
             }
-                if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
-                } 
-                else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                }
-
+            echo "</table>";
+        } else {
+            echo "0 results";
+        }
+            
                 ?>
             <br><br>
             <div class="total">
