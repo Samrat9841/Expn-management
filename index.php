@@ -71,7 +71,7 @@
                               <td>" . $row["amount"]. "</td>
                               <td>" . $row["category"]. "</td>
                               <td>" . $row["date"]. "</td>
-                             
+                              <td><button>Delete</button></td>
                             </tr>";
                   }
                   echo "</table>";
@@ -82,7 +82,6 @@
               
               ?> 
         </div><!--This is the ending of div scroll -->
-        <!-- <td ><button >Delete</button></td> -->
         <p id="response"></p>
         <p id="response1"></p>
             <br><br>
