@@ -25,8 +25,8 @@
                     <option value="Others">Others</option>
                 </select>
                 <input type="date" name="expense-date">
-              <button  id="submit"class="normal">Submit</button>
-              <button id="reset" class="normal">Reset</button>
+              <button  id="submit" class="normal" >Submit</button>
+              <button id="reset" class="normal" >Reset</button>
             </form>
             <br><br>
 
