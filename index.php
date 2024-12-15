@@ -1,10 +1,27 @@
+<?php 
+
+$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "expnDetails";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+if (isset($_GET['sn'])){
+    $sn=$_GET['sn'];
+    $delete=mysqli_query($conn,"DELETE FROM `info` WHERE `sn`='$sn'");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="img/logo.png" type="img.png" >
 </head>
 <body>
@@ -15,7 +32,7 @@
 
             
             <form method="post" action="index.php" id="dataForm" >
-                <input type="text" placeholder="Expense Name" name="expense-name" id="recordId">
+                <input type="text" placeholder="Expense Name" name="expense-name"  id="expense-name">
                 <input type="number" placeholder="Amount"  name="expense-amount">
                 <select name="expense-category" id="" >
                     <option value="" disabled selected>Select Category</option>
@@ -28,6 +45,7 @@
              
               <button id="submit" class="btn">Submit</button>
               <button id="reset" class="btn">Reset</button>
+              <!-- <button id="delete" class="btn">Delete</button> -->
             </form>
             <br><br>
 
@@ -62,6 +80,7 @@
                               <th>Amount</th>
                               <th>Category</th>
                               <th>date</th>
+                              
                           </tr>";
               
                   while($row = $result->fetch_assoc()) {
@@ -71,7 +90,7 @@
                               <td>" . $row["amount"]. "</td>
                               <td>" . $row["category"]. "</td>
                               <td>" . $row["date"]. "</td>
-                              <td><button>Delete</button></td>
+                             <td> <a href='index.php?sn=" . $row["sn"]. "' class='btn'>Delete</a></td>
                             </tr>";
                   }
                   echo "</table>";
@@ -100,8 +119,7 @@
     </div> 
 
    
-   
-    
+ 
 <script src="reset.js"></script>
 
 <script src="script.js"></script>

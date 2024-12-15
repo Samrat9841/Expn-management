@@ -31,8 +31,3 @@
 
 
 
-
-<!-- 
-$sql =" SET @num := 0; 
-          UPDATE info SET sn = @num := (@num+1);
-          ALTER TABLE info AUTO_INCREMENT =1;"; -->
