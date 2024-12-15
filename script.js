@@ -1,27 +1,27 @@
-var btn=document.querySelector(" button");
+// var btn=document.querySelector(" button");
 
 
 
-function deleteRecord() {
-    var recordName = document.getElementById('recordId').value;
-    var xhr = new XMLHttpRequest();
-    var url = "delete.php";
+// function deleteRecord() {
+//     var recordName = document.getElementById('recordId').value;
+//     var xhr = new XMLHttpRequest();
+//     var url = "delete.php";
 
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('response').innerText = xhr.responseText;
-        }
-    };
-    xhr.send("name=" + encodeURIComponent(recordName));
-}
+//     xhr.open("POST", url, true);
+//     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === 4 && xhr.status === 200) {
+//             document.getElementById('response').innerText = xhr.responseText;
+//         }
+//     };
+//     xhr.send("name=" + encodeURIComponent(recordName));
+// }
 
 
-btn.addEventListener("click",()=>{
-    console.log("clicked");
-    deleteRecord();
-})
+// btn.addEventListener("click",()=>{
+//     console.log("clicked");
+//     deleteRecord();
+// })
 
 
 

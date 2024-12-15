@@ -25,7 +25,7 @@
                     <option value="Others">Others</option>
                 </select>
                 <input type="date" name="expense-date">
-                <input type="button" value=" Submit" id="submit"class="normal">
+              <button  id="submit"class="normal">Submit</button>
             </form>
             <br><br>
 
@@ -112,3 +112,6 @@
 
 
 
+<!-- SET @num := 0;
+UPDATE info SET sn = @num := (@num+1);
+ALTER TABLE info AUTO_INCREMENT =1; -->
