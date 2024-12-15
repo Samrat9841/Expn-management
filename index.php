@@ -25,8 +25,9 @@
                     <option value="Others">Others</option>
                 </select>
                 <input type="date" name="expense-date">
-              <button  id="submit" class="normal" >Submit</button>
-              <button id="reset" class="normal" >Reset</button>
+             
+              <button id="submit" class="btn">Submit</button>
+              <button id="reset" class="btn">Reset</button>
             </form>
             <br><br>
 
@@ -70,7 +71,7 @@
                               <td>" . $row["amount"]. "</td>
                               <td>" . $row["category"]. "</td>
                               <td>" . $row["date"]. "</td>
-                              <td ><button >Delete</button></td>
+                             
                             </tr>";
                   }
                   echo "</table>";
@@ -81,7 +82,7 @@
               
               ?> 
         </div><!--This is the ending of div scroll -->
-              
+        <!-- <td ><button >Delete</button></td> -->
         <p id="response"></p>
         <p id="response1"></p>
             <br><br>
