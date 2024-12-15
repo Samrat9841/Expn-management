@@ -14,7 +14,7 @@
             <br><br>
 
             
-            <form method="post" action="index.php" id="dataForm">
+            <form method="post" action="index.php" id="dataForm" >
                 <input type="text" placeholder="Expense Name" name="expense-name" id="recordId">
                 <input type="number" placeholder="Amount"  name="expense-amount">
                 <select name="expense-category" id="" >
@@ -26,6 +26,7 @@
                 </select>
                 <input type="date" name="expense-date">
               <button  id="submit"class="normal">Submit</button>
+              <button id="reset" class="normal">Reset</button>
             </form>
             <br><br>
 
@@ -82,6 +83,7 @@
         </div><!--This is the ending of div scroll -->
               
         <p id="response"></p>
+        <p id="response1"></p>
             <br><br>
             <div class="total">
                 <strong>Total:</strong> Rs.<span id="total-amount">0</span>
@@ -100,10 +102,8 @@
    
    
     
+<script src="reset.js"></script>
 
-    <script>
-      
-    </script>
 <script src="script.js"></script>
     
 </body>
