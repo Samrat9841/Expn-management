@@ -45,6 +45,7 @@ if (isset($_GET['sn'])){
              
               <button id="submit" class="btn">Submit</button>
               <button id="reset" class="btn">Reset</button>
+              <button id="total" class="btn">Total</button>
               <!-- <button id="delete" class="btn">Delete</button> -->
             </form>
             <br><br>
