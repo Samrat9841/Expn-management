@@ -120,7 +120,7 @@ if (isset($_GET['sn'])){
     </div> 
 
    
- 
+ <script src="total.js"></script>
 <script src="reset.js"></script>
 
 <script src="script.js"></script>
