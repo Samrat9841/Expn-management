@@ -21,12 +21,12 @@ if (isset($_GET['sn'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="styling.css">
     <link rel="icon" href="img/logo.png" type="img.png" >
 </head>
 <body>
     <section class="container">
-        <div id="expn-form" class="section-padding1">
+        <div id="expn-form1" class="section-padding1">
             <h1><u>Expense Tracker</u></h1>
             <br><br>
 
@@ -45,8 +45,8 @@ if (isset($_GET['sn'])){
              
               <button id="submit" class="btn">Submit</button>
               <button id="reset" class="btn">Reset</button>
+             
               <button id="total" class="btn">Total</button>
-              <!-- <button id="delete" class="btn">Delete</button> -->
             </form>
             <br><br>
 

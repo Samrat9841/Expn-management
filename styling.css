@@ -38,7 +38,7 @@ body{
 
 
 
- #expn-form{
+ #expn-form1{
     text-align: center;
     margin-top:10% ;
     background-color:rgba(0, 0, 0, 0.08);
@@ -47,34 +47,39 @@ body{
     border-radius: 20px;
 }
 
-
-
-#expn-form  select,
-#expn-form  input{
-    
-        font-size: 15px;
-        height: 25px;
-        margin-right: 15px;
-        padding: 7px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        outline: none;
-        width: 18%;
-    
+#expn-form1  input{
+    font-size: 15px;
+    height: 25px;
+    margin-right: 15px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 18%;
+}
+#expn-form1  select  {
+    font-size: 15px;
+    height: 45px;
+    margin-right: 15px;
+    padding: 7px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    width: 18%;
 }
 
 
 
-#expn-form .total{
+#expn-form1 .total{
     font-size: 30px;
     color: #088178;
 }
 
-#expn-form .total strong{
+#expn-form1 .total strong{
     color: #fff;
 }
 
-#expn-form h1{
+#expn-form1 h1{
     font-size: 40px;
     color: #222;
 }
@@ -83,7 +88,7 @@ body{
     height: 300px;
     overflow-y: scroll;
 }
-#expn-form table{
+#expn-form1 table{
     padding: 40px 40px;
     border-collapse: collapse;
     width: 100%;
